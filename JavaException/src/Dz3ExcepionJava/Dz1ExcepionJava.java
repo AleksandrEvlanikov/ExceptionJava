@@ -27,7 +27,6 @@ public class Dz1ExcepionJava{
     public void saveToFile() {
         String fileName = surname + ".txt";
         try (BufferedWriter writer = new BufferedWriter( new FileWriter(fileName, true))) {
-//            SimpleDateFormat dateFormat = new SimpleDateFormat("dd.mm.yyyy");
             writer.write(surname + " " + firstName + " " + patronymic + " " + dateOfBirth + " " + phoneNumber + " "
             + gender);
             writer.newLine();
